@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    font-family: 'Bangers', cursive;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#board {
+    background-image: url("./BirdDashBG1.jpg");
+    background-size: 100% 100%;
+    height: 800px;
+    width: 1550px;
+    position: absolute;
+}
+
+#cloudleft {
+    background-image: url(cloud-icon-right.png);
+    background-size: 200px 200px;
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    width: 200px;
+    height: 200px;
+}
+#cloudright {
+    background-image: url(cloud-icon-left.png);
+    background-size: 200px 200px;
+    position: absolute;
+    top: 40px;
+    left: 1200px;
+    width: 200px;
+    height: 200px;
+}
+#birdleftup {
+    background-image: url(bird-icon-right.png);
+    background-size: 150px 150px;
+    position: absolute;
+    top: 40px;
+    left: 300px;
+    width: 150px;
+    height: 150px;
+}
+#birdleftdown {
+    background-image: url(bird-icon-right.png);
+    background-size: 150px 150px;
+    position: absolute;
+    top: 160px;
+    left: 150px;
+    width: 150px;
+    height: 150px;
+}
+#leftpipeup {
+    background-image: url(toppipe\ 2.png);
+    background-size: 70px 70px;
+    position: absolute;
+    left: 350px;
+    width: 70px;
+    height: 70px;
+}
+#leftpipedown {
+    background-image: url(bottompipe\ 2.png);
+    background-size: 100% 100%;
+    position: absolute;
+    left: 350px;
+    top: 250px;
+    width: 70px;
+    height: 700px;
+}
+#rightpipeup {
+    background-image: url(toppipe\ 2.png);
+    background-size: 70px 70px;
+    position: absolute;
+    left: 1100px;
+    width: 70px;
+    height: 70px;
+}
+#rightpipedown {
+    background-image: url(bottompipe\ 2.png);
+    background-size: 100% 100%;
+    position: absolute;
+    left: 1100px;
+    top: 220px;
+    width: 70px;
+    height: 700px;
+}
+#birdupright {
+    background-image: url(bird-icon-left.png);
+    background-size: 150px 150px;
+    position: absolute;
+    top: 60px;
+    left: 1050px;
+    width: 150px;
+    height: 150px;
+}
+#birddownright {
+    background-image: url(bird-icon-left.png);
+    background-size: 150px 150px;
+    position: absolute;
+    top: 200px;
+    left: 1200px;
+    width: 150px;
+    height: 150px;
+}
+#logo{
+    position: absolute;
+    top: 100px;
+    left: 610px;
+}
+#logo h1{font-size: 90px;
+color: white;}
+#playernamebox{
+    position: absolute;
+    top: 300px;
+    left: 670px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 15px;
+    background-color: white;
+    opacity: 70%;
+}
+#playernamebox input{
+    border: none;
+    outline: none;
+    
+
+}
+#playername{font-size: 15px;}
+#level1{
+    position: absolute;
+    top: 400px;
+    left: 670px;
+    width: 175px;
+    text-align: center;
+    
+    
+    
+}
+#level1 button {
+    border: 1px solid black;
+    border-radius: 60px;
+    height: 50px;
+    width: 200px;
+    font-family: 'Bangers', cursive;
+    font-size: 30px ;
+    opacity: 70%;
+    
+}
+#level2{
+    position: absolute;
+    top: 475px;
+    left: 670px;
+    width: 175px;
+    text-align: center;
+    
+}
+#level2 button {
+    border: 1px solid black;
+    border-radius: 60px;
+    height: 50px;
+    width: 200px;
+    font-family: 'Bangers', cursive;
+    font-size: 30px ;
+    opacity: 70%;
+}
+#level3{
+    position: absolute;
+    top: 550px;
+    left: 675px;
+    width: 175px;
+    text-align: center;
+}
+#level3 button {
+    border: 1px solid black;
+    border-radius: 60px;
+    height: 50px;
+    width: 200px;
+    font-family: 'Bangers', cursive;
+    font-size: 30px ;
+    opacity: 70%;
+}
+#start-button{
+    position: absolute;
+    top: 700px;
+    left: 675px;
+    width: 175px;
+    text-align: center;
+    
+}
+#start-button button {
+    border: 1px solid black;
+    border-radius: 60px;
+    height: 50px;
+    width: 200px;
+    font-family: 'Bangers', cursive;
+    font-size: 30px ;}

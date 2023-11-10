@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    font-family: 'Bangers', cursive;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#board {
+    background-image: url("./BirdDashBG1.jpg");
+    background-size: 100% 100%;
+    height: 800px;
+    width: 1540px;
+    position: absolute;
+}
+
+#container {
+    border: 1px solid black;
+    background-color: white;
+    height: 500px;
+    width: 600px;
+    position: absolute;
+    top: 100px;
+    left: 440px;
+    opacity: 30%;
+    overflow: auto;
+    text-align: center;
+}
+
+#logo h1 {
+    position: absolute;
+    top: 20px;
+    left: 625px;
+    font-size: 65px;
+    color: white;
+    text-align: center;
+}
+
+#gameover h1 {
+    position: absolute;
+    top: 130px;
+    left: 650px;
+    font-size: 45px;
+    color: rgb(224, 27, 27);
+}
+
+#playername {
+    position: absolute;
+    top: 275px;
+    left: 690px;
+    text-align: center;
+}
+
+#cscore {
+    position: absolute;
+    top: 345px;
+    left: 690px;
+}
+
+#hscore-container {
+    position: absolute;
+    top: 380px;
+    left: 650px;
+}
+
+#restart {
+    position: absolute;
+    border: 1px solid black;
+    height: 70px;
+    width: 70px;
+    top: 450px;
+    left: 640px;
+    border-radius: 50px;
+    background-image: url(https://media.istockphoto.com/id/1264183438/vector/reload-icon-outline-vector-isolated-on-white-background.jpg?b=1&s=612x612&w=0&k=20&c=mbFZ8qQlf87Ac2TB02emnyoOeSS4JJKVd_JDzjsNtCs=);
+    background-size: 100% 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+#restart button {
+    border: none;
+    height: 100%;
+    width: 100%;
+    background-image: url(https://media.istockphoto.com/id/1264183438/vector/reload-icon-outline-vector-isolated-on-white-background.jpg?b=1&s=612x612&w=0&k=20&c=mbFZ8qQlf87Ac2TB02emnyoOeSS4JJKVd_JDzjsNtCs=);
+    background-size: 100% 100%;
+    border-radius: 50px;
+}
+
+#menu {
+    position: absolute;
+    border: 1px solid black;
+    height: 70px;
+    width: 70px;
+    top: 450px;
+    left: 750px;
+    border-radius: 50px;
+    background-color: white;
+    background-image: url(https://cdn.icon-icons.com/icons2/1904/PNG/512/menu_121304.png);
+    background-size: 100% 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+#menu button {
+    border: none;
+    height: 100%;
+    width: 100%;
+    background-image: url(https://cdn.icon-icons.com/icons2/1904/PNG/512/menu_121304.png);
+    background-size: 100% 100%;
+    border-radius: 50px;
+}
+
+#score-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}

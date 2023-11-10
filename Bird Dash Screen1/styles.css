@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Bangers', cursive;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#board {
+    background-image: url("./BirdDashBG1.jpg");
+    background-size: 100% 100%;
+    height: 800px;
+    width: 1550px;
+}
+
+#instructions {
+    border: 1px solid black;
+    background-color: white;
+    height: 600px;
+    width: 1260px;
+    position: absolute;
+    top: 100px;
+    left: 130px;
+    overflow: auto;
+}
+
+#instructions h1, #instructions p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px;
+}
+
+.skipcontainer {
+    position: absolute;
+    top: 718px;
+    left: 1200px;
+}
+
+.skipcontainer button {
+    border: 1px solid black;
+    border-radius: 60px;
+    height: 50px;
+    width: 200px;
+    font-family: 'Bangers', cursive;
+    font-size: 30px ;
+}
+
+#instructions p {
+    font-size: 20px;
+    text-align: left;
+    padding: 25px;
+}
+#Heading{
+    position: absolute;
+    top: 30px;
+    left: 640px;
+}
+#Heading h1{
+    font-size: 70px;
+    color: white;
+    
+}
+

@@ -1,0 +1,21 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    background-image: url("https://wallpapercave.com/wp/wp2635955.jpg");
+}
+
+#board {
+    /* background-color: skyblue; */
+    background-image: url("./birddashbg.png");
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+/* #window{
+    background-image: url("./windowim");
+    background-size: 100% 100%;
+    position: absolute;
+    width: 1240px;
+    height: 800px;
+    
+} */
