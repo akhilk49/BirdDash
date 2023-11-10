@@ -34,9 +34,9 @@ let score = 0;
 let currentLevel = 0;
 
 const levels = [
+    { velocityX: -4, pipeDelay: 2000 },
     { velocityX: -4, pipeDelay: 1500 },
-    { velocityX: -4, pipeDelay: 1200 },
-    { velocityX: -7, pipeDelay: 50 }
+    { velocityX: -7, pipeDelay: 1000 }
 ];
 
 function initializeGame(level) {
@@ -46,6 +46,7 @@ function initializeGame(level) {
     score = 0;
     gameOver = false;
     setInterval(placePipes, levels[level].pipeDelay);
+    setInterval(update, 1000 / 60);  // Call update function regularly
 }
 
 window.onload = function () {
@@ -58,6 +59,7 @@ window.onload = function () {
     birdImg.src = "./chuckbird.png";
     birdImg.onload = function () {
         context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
+        initializeGame(currentLevel);
     }
 
     topPipeImg = new Image();
@@ -68,11 +70,9 @@ window.onload = function () {
 
     requestAnimationFrame(update);
     document.addEventListener("keydown", moveBird);
-    initializeGame(currentLevel);
 }
 
 function update() {
-    requestAnimationFrame(update);
     if (gameOver) {
         const currentHighScore = localStorage.getItem("highestScore") || 0;
         if (score > currentHighScore) {
@@ -118,6 +118,8 @@ function update() {
     if (gameOver) {
         window.location.href = "http://127.0.0.1:5500/Bird%20Dash%20LP/Bird-Dash-PT/Bird%20Dash%20Screen4/index.html";
     }
+
+    requestAnimationFrame(update);
 }
 
 function placePipes() {
@@ -172,5 +174,3 @@ function detectCollision(a, b) {
 const backgroundMusic = document.getElementById("backgroundMusic");
 backgroundMusic.play();
 backgroundMusic.pause();
-backgroundMusic.volume = 0.5;
-
