@@ -3,7 +3,7 @@ document.getElementById("restartb").addEventListener("click", function() {
 });
 
 document.getElementById("menub").addEventListener("click", function() {
-    window.location.href = "http://127.0.0.1:5500/Bird%20Dash%20LP/Bird-Dash-PT/Bird%20Dash%20Screen2/index.html";
+    window.location.href = "";
 });
 
 document.addEventListener("DOMContentLoaded", function() {

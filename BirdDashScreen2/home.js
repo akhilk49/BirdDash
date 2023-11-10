@@ -8,33 +8,33 @@ function storePlayerName() {
     }
 }
 
-// Function to handle level button clicks
 let selectedLevel = "Beginner"; // Default level
 
 function handleLevelClick(level) {
-    // Remove any previous highlighting
+
     const levelButtons = document.querySelectorAll(".level-button");
     levelButtons.forEach((button) => button.classList.remove("highlight"));
 
-    // Highlight the clicked button
+
     level.classList.add("highlight");
 
-    // Store the selected level in the variable
+ 
     selectedLevel = level.querySelector("button").getAttribute("data-level");
 }
 
 function navigateToGamePage() {
+    // console.log("HI");
     const playerName = localStorage.getItem("playerName");
     if (!playerName) {
         alert("Please enter your name first.");
         return;
     }
-
-    // Use the selectedLevel variable to pass the level information
-    window.location.href = `http://127.0.0.1:5500/Flappy%20bird%20boilerplate!!/flappy-bird/index.html?playerName=${playerName}&level=${selectedLevel}`;
+    
+    
+    window.location.href = "./../BirdDashScreen3/flappybird.html";
 }
+document.getElementById("start-button").addEventListener("click", navigateToGamePage);
 
-// Event listeners
 document.getElementById("playername").addEventListener("blur", storePlayerName);
 
 const levelButtons = document.querySelectorAll(".level-button");
@@ -44,5 +44,4 @@ levelButtons.forEach((button) => {
     });
 });
 
-document.getElementById("start-button").addEventListener("click", navigateToGamePage);
 
