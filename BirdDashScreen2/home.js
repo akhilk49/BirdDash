@@ -1,4 +1,4 @@
-// Function to store player name in local storage
+
 function storePlayerName() {
     const playerNameInput = document.getElementById("playername");
     const playerName = playerNameInput.value;
